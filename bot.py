@@ -83,7 +83,7 @@ async def newUpload(urls, client: Client, message: Message, proc: Message):
         await message.reply_text(str(e))
 
 
-@app.on_message(filters.command("post") & filters.private & filters.user(5336360484))
+@app.on_message(filters.command("post") & filters.private & filters.user(7593550190))
 async def postAnime(client: Client, message: Message):
     try:
         id = message.text.split(" ", 1)[1]
