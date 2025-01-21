@@ -14,12 +14,12 @@ app = Client(
 )
 
 
-@app.on_message(filters.command("start") & filters.private & filters.user(5336360484))
+@app.on_message(filters.command("start") & filters.private & filters.user(7593550190))
 async def start(client, message: Message):
     await message.reply_text("Working...")
 
 
-@app.on_message(filters.command("get") & filters.private & filters.user(5336360484))
+@app.on_message(filters.command("get") & filters.private & filters.user(7593550190))
 async def newUpload(client: Client, message: Message):
     try:
         proc = await message.reply_text("Getting Archive Urls...")
